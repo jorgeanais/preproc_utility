@@ -44,7 +44,7 @@ def drop_rows_with_nan_values(
     Remove rows with NaN values in the specified columns.
     """
     #df = df.copy()
-    return df.dropna(subset=cols_to_check)\
+    return df.dropna(subset=cols_to_check)
 
 
 def replace_column_names(df: pd.DataFrame, mapping: dict[str, str]) -> pd.DataFrame:
