@@ -75,6 +75,8 @@ def main(i, o):
         print("[", c1, c2, "] ->", co)
         t[co] = np.where(np.isnan(t[c1]), t[c2], t[c1])
         t.remove_columns([c1, c2])
+    
+    t.write(output_file, format="fits")
 
 if __name__ == '__main__':
     main()

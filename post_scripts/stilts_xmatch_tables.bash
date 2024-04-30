@@ -43,3 +43,13 @@ stilts tmatch2 \
        values2='ra dec' \
        out=50_outerjoin/vvv_x_vvvx_pm+parallax.fits \
        ofmt=fits
+
+
+# Unir tablas resultantes
+python script_merge.py \
+    -i /home/jorge/zorro/base_sample/lowbulge/50_outerjoin/vvv_x_vvvx_pmonly.fits \
+    -o /home/jorge/zorro/base_sample/lowbulge/60_merged/vvv_x_vvvx_pmonly_merged.fits
+
+python script_merge.py \
+    -i /home/jorge/zorro/base_sample/lowbulge/50_outerjoin/vvv_x_vvvx_pm+parallax.fits \
+    -o /home/jorge/zorro/base_sample/lowbulge/60_merged/vvv_x_vvvx_pm+parallax_merged.fits
