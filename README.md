@@ -1,8 +1,9 @@
 # preproc_utility
-A program to standarize tabular data as required for sgrmemb 
 
+A program to standarize tabular data as required for sgrmemb
 
 ## How to use
+
 ```bash
 python main.py -f vvvx_x_gaia_lowbulge.fits -o output.fits
 ```
@@ -41,3 +42,7 @@ The pipeline procedure is defined at `proc/pipeline.py`.
 | `mag_H-mag_Ks`   | H - Ks color               | mag    | ✓        | no        |
 | `l_wrap`         | Wrapped Galactic Longitude | deg    | ✓        | no        |
 | `astro_prob`     | XDGMM initial probability  | _      | ✓        | yes       |
+
+## Sequence of preprocessing
+
+preproc_utility (this) -> gmm_params -> outerjoin(stilts) -> script_merge -> total_prob
