@@ -48,8 +48,8 @@ COLS_TO_KEEP = [
     "mag_Ks",
     "er_Ks",
     "phot_g_mean_mag",
-    "phot_bp_mean_mag",  # added 11 jun 2024
-    "phot_rp_mean_mag",  # added 11 jun 2024
+    "phot_bp_mean_mag", 
+    "phot_rp_mean_mag",
     "bp_rp",
     "l_wrap",
     #"prob_xi_memb",  TODO: uncomment
