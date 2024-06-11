@@ -30,7 +30,7 @@ stilts tmatch2 \
        join=1or2 \
        values1='ra dec' \
        values2='ra dec' \
-       out=50_outerjoin/vvv_x_vvvx_pm+parallax.fits \
+       out=50_outerjoin/vvv_x_vvvx_pm+par.fits \
        ofmt=fits
 
 stilts tmatch2 \
@@ -47,17 +47,17 @@ stilts tmatch2 \
 
 # Unir tablas resultantes
 python script_merge.py \
-    -i /home/jorge/zorro/base_sample/lowbulge/50_outerjoin/virac2_x_vvvx_pm+par.fits \
-    -o /home/jorge/zorro/base_sample/lowbulge/60_merged/virac2_x_vvvx_pm+par_merged.fits
+    -i /home/jorge/data/sgr/base_sample/lowbulge/50_outerjoin/virac2_x_vvvx_pm+par.fits \
+    -o /home/jorge/data/sgr/base_sample/lowbulge/60_merged/virac2_x_vvvx_pm+par_merged.fits
 
 python script_merge.py \
-    -i /home/jorge/zorro/base_sample/lowbulge/50_outerjoin/virac2_x_vvvx_pmonly.fits \
-    -o /home/jorge/zorro/base_sample/lowbulge/60_merged/virac2_x_vvvx_pmonly_merged.fits
+    -i /home/jorge/data/sgr/base_sample/lowbulge/50_outerjoin/virac2_x_vvvx_pmonly.fits \
+    -o /home/jorge/data/sgr/base_sample/lowbulge/60_merged/virac2_x_vvvx_pmonly_merged.fits
 
 python script_merge.py \
-    -i /home/jorge/zorro/base_sample/lowbulge/50_outerjoin/vvv_x_vvvx_pm+parallax.fits \
-    -o /home/jorge/zorro/base_sample/lowbulge/60_merged/vvv_x_vvvx_pm+parallax_merged.fits
+    -i /home/jorge/data/sgr/base_sample/lowbulge/50_outerjoin/vvv_x_vvvx_pm+par.fits \
+    -o /home/jorge/data/sgr/base_sample/lowbulge/60_merged/vvv_x_vvvx_pm+par_merged.fits
 
 python script_merge.py \
-    -i /home/jorge/zorro/base_sample/lowbulge/50_outerjoin/vvv_x_vvvx_pmonly.fits \
-    -o /home/jorge/zorro/base_sample/lowbulge/60_merged/vvv_x_vvvx_pmonly_merged.fits
+    -i /home/jorge/data/sgr/base_sample/lowbulge/50_outerjoin/vvv_x_vvvx_pmonly.fits \
+    -o /home/jorge/data/sgr/base_sample/lowbulge/60_merged/vvv_x_vvvx_pmonly_merged.fits

@@ -45,4 +45,4 @@ The pipeline procedure is defined at `proc/pipeline.py`.
 
 ## Sequence of preprocessing
 
-preproc_utility (this) -> gmm_params -> outerjoin(stilts) -> script_merge -> total_prob
+preproc_utility (this) -> gmm_params (pmprop) -> outerjoin(stilts)(this) -> script_merge (this) -> total_prob (pmprop)

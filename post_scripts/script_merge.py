@@ -73,7 +73,7 @@ def main(i, o):
 
     for c1, c2, co in zip(COLS_1, COLS_2, COLS_OUT):
         print("[", c1, c2, "] ->", co)
-        t[co] = np.where(np.isnan(t[c1]), t[c2], t[c1])
+        t[co] = np.where(np.isnan(t[c1]), t[c2], t[c1])  # Si cumple t[c2] sino t[c1]
         t.remove_columns([c1, c2])
     
     t.write(output_file, format="fits")
